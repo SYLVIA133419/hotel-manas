@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Manas</title>
+
+  <!-- Flatpickr Calendar CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+  <!-- Your Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER SECTION ===== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <img src="https://i.ibb.co/PvqZKx5d/logo.png" alt="Hotel Manas Logo" class="logo">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#availability">Availability</a></li>
+          <li><a href="#restaurant">Restaurant</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Welcome to Hotel Manas</h1>
+        <p>Your comfort, our priority. A relaxing guesthouse experience with bar and restaurant services.</p>
+        <a href="#rooms" class="cta-btn">Explore Our Rooms</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ROOMS SECTION ===== -->
+  <section class="rooms-section" id="rooms">
+    <div class="container">
+      <h2 class="section-title">Our Rooms</h2>
+
+      <div class="room">
+        <h3>Single Room</h3>
+        <p><strong>Features:</strong> Cozy bed, private bathroom, TV, Wi-Fi</p>
+        <p class="price">Ksh 1500 per night <span class="with-breakfast">Ksh 1800 with breakfast</span></p>
+        <p class="bonus">Bonus: Free Wi-Fi & TV</p>
+      </div>
+
+      <div class="room">
+        <h3>Double Room</h3>
+        <p><strong>Features:</strong> Double bed, air conditioning, private bathroom, TV, tea/coffee station, Wi-Fi</p>
+        <p class="price">Ksh 2500 per night <span class="with-breakfast">Ksh 2800 with breakfast</span></p>
+        <p class="bonus">Bonus: Free Wi-Fi & TV</p>
+      </div>
+
+      <div class="room">
+        <h3>Twin Room</h3>
+        <p><strong>Features:</strong> Two single beds, air conditioning, minibar, private bathroom, TV, Wi-Fi</p>
+        <p class="price">Ksh 1500 per night <span class="with-breakfast">Ksh 1800 with breakfast</span></p>
+        <p class="bonus">Bonus: Free Wi-Fi & TV</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AVAILABILITY SECTION ===== -->
+  <section class="availability-section" id="availability">
+    <div class="container">
+      <h2 class="section-title">Check Room Availability</h2>
+      <form class="availability-form">
+        <div class="form-group">
+          <label for="checkin">Check-in Date:</label>
+          <input type="text" id="checkin" placeholder="Select check-in date">
+        </div>
+        <div class="form-group">
+          <label for="checkout">Check-out Date:</label>
+          <input type="text" id="checkout" placeholder="Select check-out date">
+        </div>
+        <button type="submit" class="book-btn">Check Availability</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER SECTION (Optional Placeholder) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Hotel Manas. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Flatpickr JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+    flatpickr("#checkin", {
+      minDate: "today",
+      dateFormat: "Y-m-d"
+    });
+    flatpickr("#checkout", {
+      minDate: "today",
+      dateFormat: "Y-m-d"
+    });
+  </script>
+
+</body>
+</html>
+<!-- ========== Restaurant Section ========== -->
+<section id="restaurant" class="restaurant-section">
+    <div class="container">
+      <h2 class="section-title">Our Restaurant</h2>
+      <p class="section-subtitle">Delight in a Taste of Tradition</p>
+  
+      <div class="restaurant-content">
+        <div class="restaurant-text">
+          <p>
+            At Hotel Manas, our restaurant serves a delightful blend of local Kenyan flavors and international cuisine.
+            Whether you're here for breakfast, lunch, or dinner, our chefs will treat you to a memorable culinary experience.
+          </p>
+          <ul class="restaurant-highlights">
+            <li><i class="fa fa-check-circle"></i> Authentic Kenyan Dishes</li>
+            <li><i class="fa fa-check-circle"></i> Fresh, Locally-Sourced Ingredients</li>
+            <li><i class="fa fa-check-circle"></i> Vegetarian & Special Diet Options</li>
+            <li><i class="fa fa-check-circle"></i> Family-Friendly Dining Area</li>
+          </ul>
+          <a href="#contact" class="restaurant-btn">Reserve a Table</a>
+        </div>
+  
+        <div class="restaurant-image">
+          <img src="images/restaurant.jpg" alt="Hotel Manas Restaurant">
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ========== Food Menu Slider Section ========== -->
+<section class="food-slider-section">
+    <div class="container">
+      <h2 class="section-title">Our Food Menu</h2>
+      <div class="food-slider-wrapper">
+        <div class="food-slider" id="foodSlider">
+          <!-- Slide 1 -->
+          <div class="food-slide">
+            <img src="images/ugali-nyama.jpg" alt="Ugali & Nyama Choma">
+            <h3>Ugali & Nyama Choma</h3>
+            <p>Traditional grilled meat served with ugali and kachumbari.</p>
+          </div>
+  
+          <!-- Slide 2 -->
+          <div class="food-slide">
+            <img src="images/swahili-fish.jpg" alt="Swahili Fish Curry">
+            <h3>Swahili Fish Curry</h3>
+            <p>A rich blend of spices with coconut-based curry and rice.</p>
+          </div>
+  
+          <!-- Slide 3 -->
+          <div class="food-slide">
+            <img src="images/vegetarian-plate.jpg" alt="Vegetarian Plate">
+            <h3>Vegetarian Plate</h3>
+            <p>Healthy mix of vegetables, chapati, and beans stew.</p>
+          </div>
+  
+          <!-- Slide 4 -->
+          <div class="food-slide">
+            <img src="images/chicken-stew.jpg" alt="Chicken Stew">
+            <h3>Chicken Stew</h3>
+            <p>Slow-cooked chicken in aromatic herbs and spices.</p>
+          </div>
+        </div>
+  
+        <!-- Navigation Buttons -->
+        <button class="slider-btn prev" onclick="slidePrev()">&#10094;</button>
+        <button class="slider-btn next" onclick="slideNext()">&#10095;</button>
+      </div>
+    </div>
+  </section>
+<!-- ========== Bar Section ========== -->
+<section class="bar-section">
+    <div class="bar-container">
+      <div class="bar-text">
+        <h2>Relax at Our Signature Bar</h2>
+        <p>Experience a vibrant atmosphere with a wide selection of local and international beverages at the Hotel Manas Bar. Whether you're winding down after a day of exploring or catching up with friends, our bar offers the perfect setting.</p>
+        <ul class="bar-features">
+          <li><i class="fas fa-cocktail"></i> Signature Cocktails & Mocktails</li>
+          <li><i class="fas fa-wine-bottle"></i> Local & International Wines</li>
+          <li><i class="fas fa-beer"></i> Premium Kenyan Beers</li>
+          <li><i class="fas fa-clock"></i> Happy Hour Specials</li>
+          <li><i class="fas fa-music"></i> Live Music & Relaxing Vibes</li>
+        </ul>
+        <a href="#contact" class="bar-btn">Visit Us Today</a>
+      </div>
+      <div class="bar-image">
+        <img src="images/bar-area.jpg" alt="Hotel Manas Bar Area">
+      </div>
+    </div>
+  </section>
+      <!-- ========== Instagram Feed Section ========== -->
+<section class="instagram-section">
+    <h2>Follow Us on Instagram</h2>
+    <p>@hotelmanas.ke – Get a glimpse of our food, bar moments & happy guests!</p>
+    
+    <div class="insta-gallery">
+      <div class="insta-item"><img src="images/insta1.jpg" alt="Instagram post 1"></div>
+      <div class="insta-item"><img src="images/insta2.jpg" alt="Instagram post 2"></div>
+      <div class="insta-item"><img src="images/insta3.jpg" alt="Instagram post 3"></div>
+      <div class="insta-item"><img src="images/insta4.jpg" alt="Instagram post 4"></div>
+      <div class="insta-item"><img src="images/insta5.jpg" alt="Instagram post 5"></div>
+      <div class="insta-item"><img src="images/insta6.jpg" alt="Instagram post 6"></div>
+    </div>
+  </section>
+<!-- ========== Contact Section ========== -->
+<section class="contact-section" id="contact">
+    <div class="contact-container">
+      <h2>Contact Hotel Manas</h2>
+      <p>Have questions or ready to book your stay? Reach out to us!</p>
+      <div class="contact-info">
+        <div><i class="fas fa-phone"></i> +254 712 345678</div>
+        <div><i class="fas fa-envelope"></i> info@hotelmanas.ke</div>
+        <div><i class="fas fa-map-marker-alt"></i> Nairobi - Kenya</div>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+<!-- ========== Booking CTA Section ========== -->
+<section class="cta-section">
+    <h2>Book Your Stay at Hotel Manas</h2>
+    <p>Comfort, Cuisine, and Culture — All in One Place.</p>
+    <a href="#contact" class="cta-btn">Reserve Now</a>
+  </section>
+<!-- ========== Invoice Generator Section ========== -->
+<section class="invoice-section">
+    <h2>Generate Your Booking Invoice</h2>
+  
+    <form id="invoiceForm">
+      <label>Guest Name:</label>
+      <input type="text" id="guestName" required>
+  
+      <label>Room Type:</label>
+      <select id="roomType" required>
+        <option value="">-- Select Room --</option>
+        <option value="single">Single Room</option>
+        <option value="double">Double Room</option>
+        <option value="twin">Twin Room</option>
+      </select>
+  
+      <label>Number of Nights:</label>
+      <input type="number" id="nights" min="1" required>
+  
+      <label>Include Breakfast:</label>
+      <select id="withBreakfast" required>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+  
+      <button type="submit">Generate Invoice</button>
+    </form>
+  
+    <div id="invoiceOutput" class="invoice-output" style="display:none;">
+      <h3>Invoice Summary</h3>
+      <p><strong>Guest:</strong> <span id="outputName"></span></p>
+      <p><strong>Room Type:</strong> <span id="outputRoom"></span></p>
+      <p><strong>Nights:</strong> <span id="outputNights"></span></p>
+      <p><strong>Breakfast:</strong> <span id="outputBreakfast"></span></p>
+      <p><strong>Total Price:</strong> KES <span id="outputTotal"></span></p>
+  
+      <button onclick="window.print()">Print Invoice</button>
+    </div>
+  </section>
+<!-- ===== Footer Section ===== -->
+<footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h2>Hotel Manas</h2>
+        <p>Your serene getaway for comfort, dining, and hospitality.</p>
+      </div>
+  
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p><strong>Phone:</strong> <a href="tel:+254722266573">+254 722266573</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@hotelmanas.co.ke">info@hotelmanas.co.ke</a></p>
+        <p><strong>Address:</strong> Hotel Manas, Mombasa, Kenya</p>
+      </div>
+  <!-- Google Map Embed -->
+<div class="footer-map">
+    <h3>Find Us on the Map</h3>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.767029307831!2d39.66820651467554!3d-4.043477897015574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1840135c99999999%3A0x1234567890abcdef!2sHotel%20Manas%2C%20Mombasa!5e0!3m2!1sen!2ske!4v1710811800000"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <a href="https://instagram.com/hotelmanas" target="_blank">Instagram</a>
+        <!-- You can add more social links if needed -->
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Hotel Manas. All rights reserved.</p>
+    </div>
+  </footer>
+          
