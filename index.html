@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hotel Manas - Guest House, Restaurant & Bar in Kenya">
+  <title>Hotel Manas</title>
+  <link rel="stylesheet" href="styles/Hotelmanas-complete-style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo.png" alt="Hotel Manas Logo">
+      <h1>Hotel Manas</h1>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#restaurant">Restaurant</a></li>
+        <li><a href="#bar">Bar</a></li>
+        <li><a href="#instagram">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <img src="images/hero-banner.jpg" alt="Hero Background">
+    <div class="hero-text">
+      <h2>Welcome to Hotel Manas</h2>
+      <p>Your comfort, our priority – Guest House | Restaurant | Bar</p>
+    </div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms" class="rooms-section">
+    <h2>Our Rooms</h2>
+    <div class="room">
+      <img src="images/single-room.jpg" alt="Single Room">
+      <h3>Single Room</h3>
+      <ul>
+        <li>TV</li>
+        <li>Free Wi-Fi</li>
+        <li>Private Bathroom</li>
+      </ul>
+      <p class="price">KES 1500 per night <span class="breakfast">KES 1800 with breakfast</span></p>
+      <label>Available: <span id="single-available">5</span></label>
+      <input type="number" id="single-count" min="0" max="10" value="5">
+    </div>
+
+    <div class="room">
+      <img src="images/double-room.jpg" alt="Double Room">
+      <h3>Double Room</h3>
+      <ul>
+        <li>TV</li>
+        <li>Air Conditioning</li>
+        <li>Free Wi-Fi</li>
+        <li>Private Bathroom</li>
+      </ul>
+      <p class="price">KES 2500 per night <span class="breakfast">KES 2800 with breakfast</span></p>
+      <label>Available: <span id="double-available">4</span></label>
+      <input type="number" id="double-count" min="0" max="10" value="4">
+    </div>
+
+    <div class="room">
+      <img src="images/twin-room.jpg" alt="Twin Room">
+      <h3>Twin Room</h3>
+      <ul>
+        <li>TV</li>
+        <li>Minibar</li>
+        <li>Free Wi-Fi</li>
+        <li>Private Bathroom</li>
+      </ul>
+      <p class="price">KES 1500 per night <span class="breakfast">KES 1800 with breakfast</span></p>
+      <label>Available: <span id="twin-available">3</span></label>
+      <input type="number" id="twin-count" min="0" max="10" value="3">
+    </div>
+
+    <div class="calendar-section">
+      <label for="checkin">Check-In Date:</label>
+      <input type="text" id="checkin" name="checkin">
+      <label for="checkout">Check-Out Date:</label>
+      <input type="text" id="checkout" name="checkout">
+    </div>
+  </section>
+
+  <!-- Restaurant Section -->
+  <section id="restaurant" class="restaurant-section">
+    <h2>Our Restaurant & Cuisine</h2>
+    <p class="restaurant-description">
+      At Hotel Manas, we serve a delightful fusion of local and international flavors.  
+      Whether you're in the mood for a hearty breakfast, a sumptuous lunch, or a cozy dinner,  
+      our chefs bring you a menu crafted to satisfy every craving. Dine in style and comfort in our elegant restaurant space.
+    </p>
+  
+    <div class="menu-slider">
+      <div class="menu-item">
+        <img src="images/food-menu-1.jpg" alt="Grilled Chicken">
+        <p class="menu-caption">Fish Curry</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/food-menu-2.jpg" alt="Vegetarian Platter">
+        <p class="menu-caption">Chicken stew</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/food-menu-3.jpg" alt="Beef Steak Special">
+        <p class="menu-caption">Fries and chicken</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/food-menu-4.jpg" alt="Seafood Delight">
+        <p class="menu-caption">Coconut rice and chapati</p>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- Bar Section -->
+  <section id="bar" class="bar-section">
+    <h2>Our Bar</h2>
+    <p>Relax and unwind at our fully stocked bar with a wide variety of drinks and cocktails.</p>
+    <img src="images/bar.jpg" alt="Bar Image">
+  </section>
+
+  <!-- Instagram Feed -->
+  <section id="instagram" class="instagram-section">
+    <h2>Our Instagram</h2>
+    <p>Follow us @hotelmanas for the latest moments!</p>
+    <iframe src="https://snapwidget.com/embed/instagram/username" width="100%" height="400" frameborder="0"></iframe>
+  </section>
+
+  <!-- Footer Contact Section -->
+  <footer id="contact" class="footer">
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p><i class="fas fa-phone-alt"></i> <a href="tel:+254722266573">+254 722266573</a></p>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:info@hotelmanas.co.ke">info@hotelmanas.co.ke</a></p>
+      <p><i class="fas fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/uFg5J2PMcwxQdWEm8?g_st=aw" target="_blank">View us on Google Maps</a></p>
+      <p>&copy; <span id="year"></span> Hotel Manas. All rights reserved.</p>
+    </div>
+    <button id="backToTop" title="Go to top">↑</button>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="scripts/Hotelmanas-complete-script.js"></script>
+</body>
+</html>

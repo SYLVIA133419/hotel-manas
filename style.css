@@ -1,0 +1,214 @@
+/* Hotel Manas Complete CSS File */
+
+/* Color Palette */
+:root {
+    --warm-gold: #FFA500;
+    --deep-brown: #4E342E;
+    --sage-green: #A8C686;
+    --light-cream: #FFF8E7;
+    --charcoal: #333333;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-cream);
+    color: var(--charcoal);
+    scroll-behavior: smooth;
+  }
+  
+  /* Header */
+  header {
+    background-color: var(--deep-brown);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo img {
+    max-height: 60px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: var(--warm-gold);
+  }
+  
+  .hero p {
+    font-size: 1.3rem;
+  }
+  
+  /* Rooms Section */
+  .rooms-section {
+    padding: 50px 20px;
+    background-color: var(--light-cream);
+  }
+  
+  .room {
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--sage-green);
+    padding-bottom: 30px;
+  }
+  
+  .room img {
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .room h3 {
+    color: var(--deep-brown);
+    font-size: 2rem;
+  }
+  
+  .room ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .room ul li::before {
+    content: "✔ ";
+    color: var(--sage-green);
+  }
+  
+  .room .price {
+    font-size: 1.2rem;
+    color: var(--charcoal);
+  }
+  
+  .room .breakfast {
+    font-weight: bold;
+    color: var(--warm-gold);
+  }
+  
+ /* === Restaurant Section === */
+.restaurant-section {
+    padding: 60px 20px;
+    background-color: #FFF8E7;
+    text-align: center;
+  }
+  
+  .restaurant-section h2 {
+    font-size: 2.5rem;
+    color: #4E342E;
+    margin-bottom: 15px;
+  }
+  
+  .restaurant-description {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+    color: #333333;
+    line-height: 1.6;
+  }
+  
+  /* === Food Menu Slider === */
+  .menu-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Scrollbar Styling */
+  .menu-slider::-webkit-scrollbar {
+    height: 10px;
+  }
+  
+  .menu-slider::-webkit-scrollbar-track {
+    background: #FFF8E7;
+  }
+  
+  .menu-slider::-webkit-scrollbar-thumb {
+    background-color: #A8C686;
+    border-radius: 10px;
+    border: 2px solid #FFF8E7;
+  }
+  
+  .menu-item {
+    flex: 0 0 auto;
+    width: 250px;
+    scroll-snap-align: start;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background: #ffffff;
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+  }
+  
+  
+  
+  /* Instagram Feed */
+  .instagram-feed {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .instagram-feed img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--deep-brown);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  footer a {
+    color: var(--warm-gold);
+    text-decoration: none;
+  }
+  
+  /* Buttons */
+  .button {
+    background-color: var(--warm-gold);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 { font-size: 2rem; }
+    .section-title { font-size: 2rem; }
+    header { flex-direction: column; align-items: flex-start; }
+    .navbar { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+  }
+  
